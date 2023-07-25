@@ -51,12 +51,7 @@ strain_names = ['F.sanfranciscensis', 'L.brevis', 'L.plantarum', 'C.paralimentar
                 'S.cerevisiae','W.anomalus','K.humilis','K.servazzii']
 all_strains = strain_names
 
-#all_strains = ['F.sanfranciscensis', 'L.brevis', 'C.paralimentarius','A.malorum',
-#               'S.cerevisiae','W.anomalus','K.humilis','K.servazzii']
-
-
 strain_color_main = ['#d9d9d9','#882255','#ddcc77','#aa4499','#cc6677','#117733','#88CCEE','#332288','#44aa99']
-#strain_color = ['#d9d9d9','#882255', '#aa4499','#cc6677','#117733','#88CCEE','#332288','#44aa99' ]
 strain_color = strain_color_main
 
 y_endpoint = []
@@ -126,7 +121,6 @@ for olN in range(500):
     num_species = 9
     #N_init = appender(all_strains, [], i, 0, num_species)
     N_init = [1600,3,199,272,171,530,34,390,169]
-    #N_init = [3,199,171,530,34]
     g_rate = appender(all_strains, [], testList1, 1, num_species)
     alpha_single = appender(all_strains, [], testList1, 2, num_species)
     
