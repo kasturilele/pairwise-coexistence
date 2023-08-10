@@ -127,7 +127,7 @@ def varCounter(strains,x,y):
 # 9-species equation solver - with more randomized sampling from parameter distributions
 seed_start = 1998
 
-for olN in range(20):
+for olN in range(1000):
     
     #the fixed parameters are set here for each run
     num_species = 9
@@ -158,39 +158,39 @@ for olN in range(20):
     repsPickedS.append(testList1)
     repsPickedP.append(testList2)
     
-    for pltnum in range(0,num_species):
-        plt.plot(t_int, y_inter[pltnum], color = strain_color[pltnum], linewidth = 1, label = all_strains[pltnum])
+    # for pltnum in range(0,num_species):
+    #     plt.plot(t_int, y_inter[pltnum], color = strain_color[pltnum], linewidth = 1, label = all_strains[pltnum])
     
-    plt.title('logistic growth model (with interaction)')
-    plt.legend(loc = "upper left")
-    plt.show()
+    # plt.title('logistic growth model (with interaction)')
+    # plt.legend(loc = "upper left")
+    # plt.show()
         
     seed_start = seed_start + 1 
     print(seed_start)
 
   
-# with open('Outnew_1000.csv', 'w') as f:
+with open('Outnew_1000.csv', 'w') as f:
       
-#     # using csv.writer method from CSV package
-#     write = csv.writer(f, dialect = 'excel')
+    # using csv.writer method from CSV package
+    write = csv.writer(f, dialect = 'excel')
       
-#     write.writerow(all_strains)
-#     write.writerows(y_endpoint)
+    write.writerow(all_strains)
+    write.writerows(y_endpoint)
 
-# with open('Outnew_1000_reps_single.csv', 'w') as f:
+with open('Outnew_1000_reps_single.csv', 'w') as f:
       
-#     # using csv.writer method from CSV package
-#     write = csv.writer(f, dialect = 'excel')
+    # using csv.writer method from CSV package
+    write = csv.writer(f, dialect = 'excel')
       
-#     write.writerow(all_strains)
-#     write.writerows(repsPickedS)
+    write.writerow(all_strains)
+    write.writerows(repsPickedS)
     
-# with open('Outnew_1000_reps_paired.csv', 'w') as f:
+with open('Outnew_1000_reps_paired.csv', 'w') as f:
       
-#     # using csv.writer method from CSV package
-#     write = csv.writer(f, dialect = 'excel')
+    # using csv.writer method from CSV package
+    write = csv.writer(f, dialect = 'excel')
     
-#     write.writerows(repsPickedP)
+    write.writerows(repsPickedP)
 
 
 
