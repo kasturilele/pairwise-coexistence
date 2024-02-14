@@ -3,3 +3,7 @@ metadata - list of other files and what they do
 GauseR_3 - code for generating all aij
 GauseR_2 - code for ri and aii
 compare_model_new - code for comparimg model predictions to experimental observations
+compare_model - updated version of compare_model_new
+parameters_plot_5 - plotting parameter combinations
+chesson_new_2 - code for niche overlap/fitness difference
+growth_curves - single and pairwise growth curves
